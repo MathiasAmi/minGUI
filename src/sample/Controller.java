@@ -25,7 +25,6 @@ public class Controller {
         outputText.setText(outputText.getText() + indtastNoget.getText() + "\n");
         indtastNoget.clear();
 
-
     }
 
 
