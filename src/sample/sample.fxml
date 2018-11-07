@@ -19,14 +19,16 @@
       <RowConstraints />
       <RowConstraints />
       <RowConstraints />
+      <RowConstraints />
    </rowConstraints>
    <children>
       <TextField fx:id="indtastNoget" onAction="#sendMetode" promptText="Indtast Noget" GridPane.rowIndex="1" />
-      <TextArea fx:id="outputText" prefHeight="200.0" prefWidth="200.0" promptText="Her kommer svaret fra programmet" GridPane.rowIndex="4" />
+      <TextArea fx:id="outputText" prefHeight="200.0" prefWidth="200.0" promptText="Her kommer svaret fra programmet" GridPane.rowIndex="5" />
       <Button fx:id="knap" mnemonicParsing="false" onAction="#sendMetode" text="Send kommando" GridPane.rowIndex="3" />
       <Label alignment="CENTER" text="Min GUI!">
          <font>
             <Font name="System Bold" size="36.0" />
          </font></Label>
+      <Button fx:id="fact" mnemonicParsing="false" onAction="#factMetode" text="FACTS" GridPane.rowIndex="4" />
    </children>
 </GridPane>

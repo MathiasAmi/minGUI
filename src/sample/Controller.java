@@ -2,6 +2,7 @@ package sample;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 
@@ -15,6 +16,9 @@ public class Controller {
     private TextField indtastNoget;
     @FXML
     private TextArea outputText;
+    @FXML
+    private Button fact;
+
     public void sendMetode(ActionEvent actionEvent) {
         String s = indtastNoget.getText();
         wordArray.add(s);
@@ -25,4 +29,7 @@ public class Controller {
     }
 
 
+    public void factMetode(ActionEvent actionEvent) {
+        outputText.setText(fact.getText() + ": Dan er max skrald");
+    }
 }
