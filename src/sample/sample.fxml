@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <TextField fx:id="indtastNoget" onAction="#sendMetode" promptText="Indtast Noget" GridPane.rowIndex="1" />
+      <TextArea fx:id="outputText" prefHeight="200.0" prefWidth="200.0" promptText="Her kommer svaret fra programmet" GridPane.rowIndex="4" />
+      <Button fx:id="knap" mnemonicParsing="false" onAction="#sendMetode" text="Send kommando" GridPane.rowIndex="3" />
+      <Label alignment="CENTER" text="Min GUI!">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font></Label>
+   </children>
+</GridPane>
