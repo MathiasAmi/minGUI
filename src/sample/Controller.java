@@ -29,6 +29,7 @@ public class Controller {
 
 
     public void factMetode(ActionEvent actionEvent) {
-        outputText.setText(fact.getText() + ": Dan er max skrald");
+        outputText.setText(fact.getText() + ": Dan er max skrald" + "\n" + outputText.getText() + "\n");
+        indtastNoget.clear();
     }
 }
